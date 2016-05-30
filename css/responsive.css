@@ -1,0 +1,108 @@
+/* Responsive styles
+================================================== */
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px) {
+	.dropdown i{
+		display: none;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media (min-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 768px) and (max-width: 991px) {
+	
+	.navbar-brand {
+	    height: 15px;
+	    padding: 10px 7px;
+	}
+	.nav > li > a {
+	    padding: 15px 5px;
+	    font-size: 12px;
+
+	}
+	.navbar-nav{
+		margin-right: 20px;
+	}
+	.navbar-brand a{
+		margin-left: 20px;
+	}
+
+
+
+	/*======== Pricing ===============*/
+	.pricing-inner{
+		margin-bottom: 30px;
+	}
+	/*=========Contact info =============*/
+	.info-wrap i{
+		float: none;
+		margin:  0 auto 10px;
+	}
+	.info-wrap{
+		text-align: center;
+	}
+}
+
+/* Custom, iPhone Retina */ 
+@media (min-width : 320px) and (max-width : 767px)  {
+	.slider-wrap {
+    	padding: 115px 0px;
+	}
+	.slider-content{
+		width: 80%;
+		padding-top: 0px;
+	}
+
+	.logo-title {
+	    font-size: 65px;
+	}
+	.navbar-brand a{
+		margin-left: 20px;
+	}
+
+	/*how its works -=================*/
+	.process-inner{
+		padding: 0px 20px;
+	}
+	.heading-inner p {
+	    width: 80%;
+	}
+	.process-inner div{
+		display: block;
+		clear: both;
+	}
+	.process-inner .step {
+	    font-size: 130px;
+	    margin-bottom: 40px;
+	}
+
+	/*=========gallery =======================*/
+	.gallery-desc {
+    	margin-bottom: 30px;
+	}
+
+	/*======== Pricing ===============*/
+	.pricing-inner{
+		margin-bottom: 30px;
+	}
+
+
+	/* =========contact info ================*/
+	.info-wrap{
+		margin-bottom: 50px;
+	}
+	.footer-socail li{
+		margin-bottom: 5px;
+	}
+	.copyright.right,.copyright .left{
+		float: none;
+		text-align: center;
+	}
+
+}
