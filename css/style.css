@@ -656,9 +656,6 @@ h5{
 	PROCESS SECTION
 =============================================================*/
 
-#section-process{
-	border-bottom: 1px solid #EAEAEA;
-}
 .process-inner{
 	padding: 20px ;
 	margin-right: -1px;
@@ -1022,3 +1019,12 @@ h5{
 }
 .left{float: left;}
 
+/* etc */
+
+img#product-photo {
+    display: inline-block;
+    width: 500px;
+    width: 75%;
+    max-width: 500px;
+    margin-top: 25px;
+}
