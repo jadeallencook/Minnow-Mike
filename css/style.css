@@ -1012,13 +1012,6 @@ h5{
     opacity: 1;
 }
 
-
-/* floating section class*/
-.right{
-	float: right;
-}
-.left{float: left;}
-
 /* etc */
 
 img#product-photo {
@@ -1048,17 +1041,11 @@ div#store div.row {
     width: 80%;
     max-width: 750px;
     position: relative;
-    top: 32%;
-    transform: translateY(32%);
+    top: 50px;
 }
 
-h1.directions {
-    display: inline-block;
-    cursor: pointer;
-}
-
-h1.directions:hover {
-    opacity: 0.75;
+div#store h1 {
+    margin-top: 0px;
 }
 
 span#back-to-homepage {
@@ -1071,4 +1058,9 @@ img#notch-photos {
     width: 250px;
     margin-bottom: -100px;
     display: inline-block;
+}
+
+div.sp-wrap {
+    display: block;
+    width: 75%;
 }
