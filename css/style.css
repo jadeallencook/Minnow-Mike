@@ -961,7 +961,7 @@ h5{
 .footer-logo h4{
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 2em;
 }
 .footer-logo img{
 	width: 120px;
@@ -1027,4 +1027,42 @@ img#product-photo {
     width: 75%;
     max-width: 500px;
     margin-top: 25px;
+}
+
+/* store */
+div#store {
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    top: 0px;
+}
+
+div#photo-gallary img {
+    width: 75%;
+}
+
+div#store div.row {
+    width: 80%;
+    max-width: 750px;
+    position: relative;
+    top: 32%;
+    transform: translateY(32%);
+}
+
+h1.directions {
+    display: inline-block;
+    cursor: pointer;
+}
+
+h1.directions:hover {
+    opacity: 0.75;
+}
+
+span#back-to-homepage {
+    font-size: 0.75em;
+    color: #C49E5D;
+    cursor: pointer;
 }
