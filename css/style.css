@@ -1066,3 +1066,9 @@ span#back-to-homepage {
     color: #C49E5D;
     cursor: pointer;
 }
+
+img#notch-photos {
+    width: 250px;
+    margin-bottom: -100px;
+    display: inline-block;
+}
