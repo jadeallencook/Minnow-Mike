@@ -646,7 +646,6 @@ h5 {
 }
 
 .feature-box {
-    cursor: pointer;
     padding: 40px 60px 20px;
     min-height: 300px;
     border-top: 1px solid #fbfbfb;
@@ -700,27 +699,9 @@ h5 {
     border-color: #DDD;
 }
 
-.feature-box:hover {
-    background: #fff;
-    color: #232323;
-    border-color: #fff;
-}
-
-.feature-box:hover a,
-.feature-box:hover a i,
-.feature-box:hover h4.sub-title,
-.feature-box:hover a .title,
-.feature-box:hover .section-title {
-    color: #232323;
-}
-
 .feature-box a p {
     font-size: 14px;
     color: #eee;
-}
-
-.feature-box:hover p {
-    color: #232323;
 }
 
 
@@ -1150,6 +1131,7 @@ div#store {
     position: fixed;
     z-index: 9999;
     top: 0px;
+    overflow-y: scroll;
 }
 
 div#photo-gallary img {
