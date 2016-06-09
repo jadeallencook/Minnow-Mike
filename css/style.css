@@ -1153,6 +1153,8 @@ span#back-to-homepage {
     font-size: 0.75em;
     color: #C49E5D;
     cursor: pointer;
+    margin-bottom: 25px;
+    display: inline-block;
 }
 
 img#notch-photos {
@@ -1178,5 +1180,8 @@ div.sp-wrap {
     }
     #header-call-to-action {
         margin-top: -25px;
+    }
+    h1.logo-title {
+        margin-left: -15px;
     }
 }
