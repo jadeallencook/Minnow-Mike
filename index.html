@@ -118,7 +118,8 @@
                         <h2 class="big-title wow slideInLeft">How it works</h2>
                         <h4 class="big-sub-title wow slideInRight">Assembles In Seconds</h4>
                     </div>
-                    <p class="wow fadeInUp">Our design is created to be used without any type of tools and built with the strongest materials. Using the clamp you can hook this rod holder directly onto any tubing on any boat and in a matter of seconds. Just slide the holder over your desired location and tighten it down!</p>
+                    <p class="wow fadeInUp">Our design is created to be used without any type of tools and built with the strongest materials. Using the clamp you can hook this rod holder directly onto any tubing on any boat and in a matter of seconds. Just slide the holder
+                        over your desired location and tighten it down!</p>
                     <img class="wow slideInRight" src="images/product/side_view.jpg" id="product-photo" />
                 </div>
             </div>
@@ -162,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <img src="images/product/poll_notch.jpg" id="notch-photos" class="wow slideInRight" />
             </div>
             <!-- / row end -->
@@ -264,7 +265,8 @@
                         <h2 class="big-title wow slideInLeft">connect with us</h2>
                         <h4 class="big-sub-title wow slideInRight">Way To Contact Us</h4>
                     </div>
-                    <p class="wow pulse">If you are interested in learning more or have any questions about our products, please contact us today! Our staff is available and on call 24 hours a day to provide you with the answers that you need. Contact us at any time to share your feedback or to learn more about Minnow Mike.</p>
+                    <p class="wow pulse">If you are interested in learning more or have any questions about our products, please contact us today! Our staff is available and on call 24 hours a day to provide you with the answers that you need. Contact us at any time to share
+                        your feedback or to learn more about Minnow Mike.</p>
                 </div>
             </div>
             <!-- heading row end -->
@@ -362,7 +364,8 @@
                         <a href="#slider-part" class="page-scroll footer-logo">
                             <h4 class="wow slideInLeft">MINNOW<span style="color:#c39d62">MIKE</span></h4>
                         </a>
-                        <p class="wow slideInRight">Minnow Mike is an easy and portable rod holder setup. Light weight and made from extremely strong materials which are all locally sourced in Bay City, Michigan! If you want an easy solution for a rod holder on your boat look no further, Minnow Mike can attach to nearly any type of tubing on your vessel.</p>
+                        <p class="wow slideInRight">Minnow Mike is an easy and portable rod holder setup. Light weight and made from extremely strong materials which are all locally sourced in Bay City, Michigan! If you want an easy solution for a rod holder on your boat look no
+                            further, Minnow Mike can attach to nearly any type of tubing on your vessel.</p>
                         <ul class="footer-socail list-inline">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -412,10 +415,42 @@
                 </div>
                 <div class="col-md-12">
                     <h1>$34.99</h1>
-                    <p>The Minnow Mike is an easy and portable rod holder setup. It is light weight and made of extremely strong materials which are all locally sourced. If you want an easy solution or rod holder for your boat, the Minnow Mike can attach to nearly any type of tubing on your vessel. </p>
-                    <a href="#section-gallery" class="button button--antiman button--inverted-alt" style="text-align:center;">
+                    <p>The Minnow Mike is an easy and portable rod holder setup. It is light weight and made of extremely strong materials which are all locally sourced. If you want an easy solution or rod holder for your boat, the Minnow Mike can attach
+                        to nearly any type of tubing on your vessel. </p>
+                    <script src="https://checkout.stripe.com/checkout.js"></script>
+
+                    <a class="button button--antiman button--inverted-alt" id="customButton" style="text-align:center;">
                         <i class="button-icon icon icon-wallet"></i><span>Checkout</span>
                     </a>
+
+                    <script>
+                        var handler = StripeCheckout.configure({
+                            key: 'pk_live_JwQ582yb0ZWJHMuskCNDsdYN',
+                            image: 'https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/14370108_304000439972834_8085363037565385855_n.png?oh=a78d91a6dacd4e605aab7f2e081c1057&oe=5967BDB2',
+                            locale: 'auto',
+                            token: function(token) {
+                                // You can access the token ID with `token.id`.
+                                // Get the token ID to your server-side code for use.
+                            }
+                        });
+
+                        document.getElementById('customButton').addEventListener('click', function(e) {
+                            // Open Checkout with further options:
+                            handler.open({
+                                name: 'Minnow Mike',
+                                description: 'No Tools Needed Rod Holder',
+                                amount: 3499,
+                                shippingAddress: true,
+                                billingAddress: true
+                            });
+                            e.preventDefault();
+                        });
+
+                        // Close Checkout on page navigation:
+                        window.addEventListener('popstate', function() {
+                            handler.close();
+                        });
+                    </script>
                     <span id="back-to-homepage">Click Here To Go Back To The Homepage</span>
                 </div>
             </div>
@@ -451,7 +486,7 @@
     <script type="text/javascript" src="js/smoothproducts.min.js"></script>
     <script type="text/javascript">
         /* wait for images to load */
-        $(window).load(function () {
+        $(window).load(function() {
             $('.sp-wrap').smoothproducts();
         });
     </script>
