@@ -1,7 +1,7 @@
 /*
 	Template Name: Arena resposnive App landing template
 	Author: Themeturn
-	Author URI: 
+	Author URI:
 	Description: App landing page
 	Version: 1.0
 */
@@ -20,7 +20,7 @@
 09. Pricing
 10.	Contact
 11.	Footer
-12.Back To Top Button 
+12.Back To Top Button
 
 
 */
@@ -1072,7 +1072,7 @@ h5 {
 }
 
 
-/* Back To Top Button 
+/* Back To Top Button
 ======================================*/
 
 #back-top {
@@ -1140,6 +1140,7 @@ div#photo-gallary img {
 
 div#store div.row {
     width: 80%;
+    min-width: 375px;
     max-width: 750px;
     position: relative;
     top: 50px;
