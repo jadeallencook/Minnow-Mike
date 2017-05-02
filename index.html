@@ -267,47 +267,12 @@
                     </div>
                     <p class="wow pulse">If you are interested in learning more or have any questions about our products, please contact us today! Our staff is available and on call 24 hours a day to provide you with the answers that you need. Contact us at any time to share
                         your feedback or to learn more about Minnow Mike.</p>
-                </div>
-            </div>
-            <!-- heading row end -->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <form class="contact-inner" id="contact-form" action="contact-form.php" method="post" role="form">
-                        <div class="row">
-                            <div class="col-md-4 wow fadeInLeft">
-                                <div class="form-group">
-                                    <label> name</label>
-                                    <input type="text" class="form-control" placeholder="Kevin VanDam" name="name" id="name" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4 wow fadeInLeft">
-                                <div class="form-group">
-                                    <label> Email</label>
-                                    <input class="form-control" name="email" id="email" type="email" placeholder="kev@vandam.com" required>
-                                </div>
-                            </div>
-                            <div class="col-md-4 wow fadeInRight">
-                                <div class="form-group">
-                                    <label> Subject</label>
-                                    <input type="text" class="form-control" placeholder="Keep up the good work!" name="subject" id="subject" required>
-                                </div>
-                            </div>
-                            <div class="col-md-12 wow fadeInDown">
-                                <div class="form-group">
-                                    <label> Message</label>
-                                    <textarea name="message" cols="30" rows="8" class="form-control" placeholder="Love your rod holder, I take it everywhere with me!" name="message" id="message" required></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- row end -->
-                        <div class="row">
-                            <div class="col-md-12 text-center wow pulse">
-                                <button class="button button--antiman button--inverted-alt button--border-thick" type="submit">
-                                    <i class="button-icon icon icon-anchor"></i><span>connect</span></button>
-                            </div>
-                        </div>
-                    </form>
+                        <br />
+                  <a href="contact">
+                    <button class="button button--antiman button--inverted-alt button--border-thick" type="submit">
+                      <i class="button-icon icon icon-anchor"></i><span>connect</span>
+                    </button>
+                  </a>
                 </div>
             </div>
             <!-- row end -->
@@ -326,7 +291,7 @@
                         <i class="icon icon-phone"></i>
                         <div class="info-box">
                             <h4>Call Now</h4>
-                            <h5>+1(877)393-4746</h5>
+                            <h5>+1 (877) 393-4746</h5>
                         </div>
 
                     </div>
@@ -414,43 +379,18 @@
                     </center>
                 </div>
                 <div class="col-md-12">
-                    <h1>$34.99</h1>
-                    <p>The Minnow Mike is an easy and portable rod holder setup. It is light weight and made of extremely strong materials which are all locally sourced. If you want an easy solution or rod holder for your boat, the Minnow Mike can attach
-                        to nearly any type of tubing on your vessel. </p>
-                    <script src="https://checkout.stripe.com/checkout.js"></script>
+                    <h1>$19.95</h1>
+                    <p>
+                      The Minnow Mike is an easy and portable rod holder setup. It is light weight and made of extremely strong materials which are all locally sourced. If you want an easy solution or rod holder for your boat, the Minnow Mike can attach to nearly any type of tubing on your vessel.
+                    </p>
+                    <br />
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                      <input type="hidden" name="cmd" value="_s-xclick">
+                      <input type="hidden" name="hosted_button_id" value="4F3Q72X7RVK3W">
+                      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
 
-                    <a class="button button--antiman button--inverted-alt" id="customButton" style="text-align:center;">
-                        <i class="button-icon icon icon-wallet"></i><span>Checkout</span>
-                    </a>
-
-                    <script>
-                        var handler = StripeCheckout.configure({
-                            key: 'pk_live_JwQ582yb0ZWJHMuskCNDsdYN',
-                            image: 'https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/14370108_304000439972834_8085363037565385855_n.png?oh=a78d91a6dacd4e605aab7f2e081c1057&oe=5967BDB2',
-                            locale: 'auto',
-                            token: function(token) {
-                                // You can access the token ID with `token.id`.
-                                // Get the token ID to your server-side code for use.
-                            }
-                        });
-
-                        document.getElementById('customButton').addEventListener('click', function(e) {
-                            // Open Checkout with further options:
-                            handler.open({
-                                name: 'Minnow Mike',
-                                description: 'No Tools Needed Rod Holder',
-                                amount: 3499,
-                                shippingAddress: true,
-                                billingAddress: true
-                            });
-                            e.preventDefault();
-                        });
-
-                        // Close Checkout on page navigation:
-                        window.addEventListener('popstate', function() {
-                            handler.close();
-                        });
-                    </script>
                     <span id="back-to-homepage">Click Here To Go Back To The Homepage</span>
                 </div>
             </div>
